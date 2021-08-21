@@ -1,0 +1,22 @@
+{% block content %}
+
+<html>
+<head>
+
+</head>
+<body>
+
+    {% if reqs == [] %}
+        <p>Nothing here</p>
+    {% else %}
+        {% for req in reqs %}
+
+            <p>{{ req.content.decode() }}</p>
+
+        {% endfor %}
+    {% endif %}
+
+</body>
+</html>
+
+{% endblock %}
